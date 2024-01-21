@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Ticket Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="toggle" onclick="toggleMenu()">&#9776;</div>
+        <div id="menu">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header>
+            <h1>Welcome to My E-Ticket Portal</h1>
+            <p>Hi, Welcome to our E-Ticket portal. </p>
+        </header>
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <p>This Portal is created through HTML,CSS and JavaScript. The portal is created by passionate web and
+                SOFTWARE
+                Develpers. These Develpers are Muhammad Mustafa , Malik Awais Tariq and Muhammad and Usman havig id's as
+                61
+                ,62 and...They started there journey from Computer Science Department of National University of
+                Technology
+                (Nutech) in fall 2023 as Software engineers. [Your Name], and I'm passionate about [Your Passion].</p>
+
+            <!-- Add portfolio items here -->
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <P>We deal in all kinds of National and International Ticket.
+                For your easiness we have introduced this portal.
+                It will allow you to make booking for your trips and travels easily from anywhere you like from any city
+                you
+                like to any city that you want.
+                Feel free to contact us i you face any problum during bookings and we will like you to report bugs that
+                you
+                detect in whlie using it.</P>
+            <!-- Add more content about yourself here -->
+        </section>
+        <section id="contact" class="loop">
+            <section>
+
+                <h1></h1>
+
+                <label for="name">Your Name:</label>
+                <div id="name" class="center"><input type="text" id="name" placeholder="Your Name"></div>
+
+                <label for="TravelClass" class="center">Travel Class:</label>
+                <input type="radio" id="TravelClass" name="class" value="Business" placeholder="TravelClass"> Business
+                Class
+                <input type="radio" id="TravelClass" name="class" value="Economy"> Economy Class
+
+                <label for="occupation">Occupation:</label>
+                
+                <div class="backdrop center">
+                    <select id="occupation">
+                        <option value="Student">Student</option>
+                        <option value="GovernmentEmployee">Government Employee</option>
+                        <option value="Civilian">Civilian</option>
+                    </select>
+    
+                    <label for="fromCity" >From City:</label>
+                    <select id="fromCity">
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="lahore">lahore</option>
+                        <!-- Add more cities as needed -->
+                    </select>
+    
+                    <label for="toCity">To City:</label>
+                    <select id="toCity">
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <!-- Add more cities as needed -->
+                    </select>
+                </div>
+
+
+                <div class="button_submit center"><button onclick="displayInfo()">Submit</button></div>
+
+                <h2>Your Active Ticket and there status</h2>
+                <table id="userInfoTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Travel Class</th>
+                        <th>Occupation</th>
+                        <th>From City</th>
+                        <th>To City</th>
+                    </tr>
+                </table>
+
+            </section>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <div style="margin: 10px 0px;" class="button_submit"><button type="submit">Send Message</button></div>
+            </form>
+        </section>
+        <footer>
+            <p>Connect with me on social media:</p>
+            <p>Email: <a href="mailto:muhammadmustafaf23@nutech.edu.pk">muhammadmustafaf23@nutech.edu.pk</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/muhammadmustafafazal938/?hl=en"
+                    target="_blank">muhammadmustafafazal938</a></p> |
+            <a href="https://github.com/MuhammadMustafa938/ICT-Project-61.git">GitHub</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+ 
+</body>
+
+</html>
